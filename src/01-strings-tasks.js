@@ -9,110 +9,110 @@
 /**
  * Returns the result of concatenation of two strings.
  *
- * @param {string} value1
- * @param {string} value2
- * @return {string}
- *
- * @example
- *   'aa', 'bb' => 'aabb'
- *   'aa',''    => 'aa'
- *   '',  'bb'  => 'bb'
- */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
-}
+//  * @param {string} value1
+//  * @param {string} value2
+//  * @return {string}
+//  *
+//  * @example
+//  *   'aa', 'bb' => 'aabb'
+//  *   'aa',''    => 'aa'
+//  *   '',  'bb'  => 'bb'
+//  */
+// function concatenateStrings(value1, value2) {
+//   return value1 + value2
+// }
 
 
 /**
  * Returns the length of given string.
  *
- * @param {string} value
- * @return {number}
- *
- * @example
- *   'aaaaa' => 5
- *   'b'     => 1
- *   ''      => 0
- */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
-}
+//  * @param {string} value
+//  * @return {number}
+//  *
+//  * @example
+//  *   'aaaaa' => 5
+//  *   'b'     => 1
+//  *   ''      => 0
+//  */
+// function getStringLength(value) {
+//   return value.length
+// }
 
 /**
  * Returns the result of string template and given parameters firstName and lastName.
  * Please do not use concatenation, use template string :
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
  *
- * @param {string} firstName
- * @param {string} lastName
- * @return {string}
- *
- * @example
- *   'John','Doe'      => 'Hello, John Doe!'
- *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
- */
-function getStringFromTemplate(/* firstName, lastName */) {
-  throw new Error('Not implemented');
-}
+//  * @param {string} firstName
+//  * @param {string} lastName
+//  * @return {string}
+//  *
+//  * @example
+//  *   'John','Doe'      => 'Hello, John Doe!'
+//  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
+//  */
+// function getStringFromTemplate(firstName, lastName) {
+//   return `Hello, ${firstName} ${lastName}!`
+// }
 
 /**
  * Extracts a name from template string 'Hello, First_Name Last_Name!'.
  *
- * @param {string} value
- * @return {string}
- *
- * @example
- *   'Hello, John Doe!' => 'John Doe'
- *   'Hello, Chuck Norris!' => 'Chuck Norris'
- */
-function extractNameFromTemplate(/* value */) {
-  throw new Error('Not implemented');
-}
+//  * @param {string} value
+//  * @return {string}
+//  *
+//  * @example
+//  *   'Hello, John Doe!' => 'John Doe'
+//  *   'Hello, Chuck Norris!' => 'Chuck Norris'
+//  */
+// function extractNameFromTemplate(value) {
+//   return value.slice(7, -1).trim();
+// }
 
 
 /**
  * Returns a first char of the given string.
- *
- * @param {string} value
- * @return {string}
- *
- * @example
- *   'John Doe'  => 'J'
- *   'cat'       => 'c'
- */
-function getFirstChar(/* value */) {
-  throw new Error('Not implemented');
-}
+//  *
+//  * @param {string} value
+//  * @return {string}
+//  *
+//  * @example
+//  *   'John Doe'  => 'J'
+//  *   'cat'       => 'c'
+//  */
+// function getFirstChar(value) {
+//   return value[0];
+// }
 
 /**
  * Removes a leading and trailing whitespace characters from string.
- *
- * @param {string} value
- * @return {string}
- *
- * @example
- *   '  Abracadabra'    => 'Abracadabra'
- *   'cat'              => 'cat'
- *   '\tHello, World! ' => 'Hello, World!'
- */
-function removeLeadingAndTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
-}
+//  *
+//  * @param {string} value
+//  * @return {string}
+//  *
+//  * @example
+//  *   '  Abracadabra'    => 'Abracadabra'
+//  *   'cat'              => 'cat'
+//  *   '\tHello, World! ' => 'Hello, World!'
+//  */
+// function removeLeadingAndTrailingWhitespaces(value) {
+//   return value.trim();
+// }
 
 /**
  * Returns a string that repeated the specified number of times.
- *
- * @param {string} value
- * @param {string} count
- * @return {string}
- *
- * @example
- *   'A', 5  => 'AAAAA'
- *   'cat', 3 => 'catcatcat'
- */
-function repeatString(/* value, count */) {
-  throw new Error('Not implemented');
-}
+//  *
+//  * @param {string} value
+//  * @param {string} count
+//  * @return {string}
+//  *
+//  * @example
+//  *   'A', 5  => 'AAAAA'
+//  *   'cat', 3 => 'catcatcat'
+//  */
+// function repeatString(value, count) {
+//   return value.repeat(count);
+// }
 
 /**
  * Remove the first occurrence of string inside another string
@@ -126,8 +126,8 @@ function repeatString(/* value, count */) {
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(/* str, value */) {
-  throw new Error('Not implemented');
+function removeFirstOccurrences(str, value) {
+  
 }
 
 /**
