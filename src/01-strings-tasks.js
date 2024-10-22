@@ -18,9 +18,9 @@
 //  *   'aa',''    => 'aa'
 //  *   '',  'bb'  => 'bb'
 //  */
-// function concatenateStrings(value1, value2) {
-//   return value1 + value2
-// }
+function concatenateStrings(value1, value2) {
+  return value1 + value2;
+}
 
 
 /**
@@ -34,9 +34,9 @@
 //  *   'b'     => 1
 //  *   ''      => 0
 //  */
-// function getStringLength(value) {
-//   return value.length
-// }
+function getStringLength(value) {
+  return value.length;
+}
 
 /**
  * Returns the result of string template and given parameters firstName and lastName.
@@ -51,9 +51,9 @@
 //  *   'John','Doe'      => 'Hello, John Doe!'
 //  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
 //  */
-// function getStringFromTemplate(firstName, lastName) {
-//   return `Hello, ${firstName} ${lastName}!`
-// }
+function getStringFromTemplate(firstName, lastName) {
+  return `Hello, ${firstName} ${lastName}!`;
+}
 
 /**
  * Extracts a name from template string 'Hello, First_Name Last_Name!'.
@@ -65,9 +65,9 @@
 //  *   'Hello, John Doe!' => 'John Doe'
 //  *   'Hello, Chuck Norris!' => 'Chuck Norris'
 //  */
-// function extractNameFromTemplate(value) {
-//   return value.slice(7, -1).trim();
-// }
+function extractNameFromTemplate(value) {
+  return value.slice(7, -1).trim();
+}
 
 
 /**
@@ -80,9 +80,9 @@
 //  *   'John Doe'  => 'J'
 //  *   'cat'       => 'c'
 //  */
-// function getFirstChar(value) {
-//   return value[0];
-// }
+function getFirstChar(value) {
+  return value[0];
+}
 
 /**
  * Removes a leading and trailing whitespace characters from string.
@@ -95,9 +95,9 @@
 //  *   'cat'              => 'cat'
 //  *   '\tHello, World! ' => 'Hello, World!'
 //  */
-// function removeLeadingAndTrailingWhitespaces(value) {
-//   return value.trim();
-// }
+function removeLeadingAndTrailingWhitespaces(value) {
+  return value.trim();
+}
 
 /**
  * Returns a string that repeated the specified number of times.
@@ -110,9 +110,9 @@
 //  *   'A', 5  => 'AAAAA'
 //  *   'cat', 3 => 'catcatcat'
 //  */
-// function repeatString(value, count) {
-//   return value.repeat(count);
-// }
+function repeatString(value, count) {
+  return value.repeat(count);
+}
 
 /**
  * Remove the first occurrence of string inside another string
@@ -127,7 +127,7 @@
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-  
+  return str.replace(value, '');
 }
 
 /**
@@ -143,6 +143,7 @@ function removeFirstOccurrences(str, value) {
  */
 function unbracketTag(/* str */) {
   throw new Error('Not implemented');
+
 }
 
 
@@ -156,8 +157,8 @@ function unbracketTag(/* str */) {
  *   'Thunderstruck' => 'THUNDERSTRUCK'
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
-function convertToUpperCase(/* str */) {
-  throw new Error('Not implemented');
+function convertToUpperCase(str) {
+  return str.toUpperCase();
 }
 
 /**
@@ -275,13 +276,13 @@ function getCardId(/* value */) {
 
 
 module.exports = {
+  repeatString,
   concatenateStrings,
   getStringLength,
   getStringFromTemplate,
   extractNameFromTemplate,
   getFirstChar,
   removeLeadingAndTrailingWhitespaces,
-  repeatString,
   removeFirstOccurrences,
   unbracketTag,
   convertToUpperCase,
